@@ -13,6 +13,11 @@ import certificate from './LOGO AZERON REALTY/certificate.png';
 import click from './LOGO AZERON REALTY/click.png';
 import design from './LOGO AZERON REALTY/design.png';
 import building from './LOGO AZERON REALTY/building.png';
+import service_img from './LOGO AZERON REALTY/service_img.png';
+import profile from './LOGO AZERON REALTY/profile.png';
+import star0 from './LOGO AZERON REALTY/star0.png';
+import star4 from './LOGO AZERON REALTY/star4.png';
+import star5 from './LOGO AZERON REALTY/star5.png';
 
 export const Image = {
   Logo: logo,
@@ -30,4 +35,9 @@ export const Image = {
   Click: click,
   Design: design,
   Building: building,
+  ServiceImg: service_img,
+  Profile: profile,
+  Star0: star0,
+  Star4: star4,
+  Star5: star5,
 };

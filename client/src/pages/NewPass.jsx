@@ -23,7 +23,7 @@ const NewPass = () => {
       {/* LEFT SIDE */}
       <div className="bg-red-900 px-16 py-8 my-16 rounded-[70px] text-white w-1/2">
         <p className="text-center text-4xl font-bold mb-12">Password Reset</p>
-        <form action="" className="flex flex-col mb-36">
+        <form action="" className="flex flex-col mb-16">
           <p className="mb-4">Change Password:</p>
           <input
             type="password"

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Image } from '../assets/Image';
 import { ImageCard } from '../component/ImageCard';
+import { FeedbackCard } from '../component/FeedbackCard';
+import { UserRating } from '../component/UserRating';
 
 const Home = () => {
   return (
@@ -50,7 +52,7 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="flex flex-col space-y-18 px-16">
+        <div className="flex flex-col space-y-18 px-32">
           {/* 1ST BENEFITS */}
           <div className="self-start">
             <div
@@ -154,7 +156,7 @@ const Home = () => {
       </div>
 
       {/* SERVICES HEADER */}
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center mb-16">
         <p
           className="text-5xl font-bold tracking-widest"
           style={{
@@ -163,6 +165,161 @@ const Home = () => {
         >
           SERVICES
         </p>
+      </div>
+
+      {/* SERVICES CONTENT */}
+      <div className="flex justify-center items-center mb-16">
+        <img src={Image.ServiceImg} alt="" className="w-[545px] h-[376px]" />
+      </div>
+
+      <div className="flex flex-col px-24 mb-16">
+        <p className="text-4xl font-bold mb-6 text-red-900">
+          Here’s a list of services Azeron Realty could offer:
+        </p>
+
+        <ul className="list-disc text-3xl leading-14 space-y-4 pl-7">
+          <li>
+            <span className="font-semibold">Residential Sales & Leasing</span> -
+            Helping clients buy, sell, or rent houses, apartments, and
+            condominiums.
+          </li>
+          <li>
+            <span className="font-semibold">Commercial Real Estate</span> -
+            Assisting businesses in acquiring office spaces, retail locations,
+            and industrial properties.
+          </li>
+          <li>
+            <span className="font-semibold">Property Management</span> -
+            Managing rental properties, including tenant screening, maintenance,
+            and rent collection.
+          </li>
+          <li>
+            <span className="font-semibold">
+              Real Estate Investment Consulting
+            </span>{' '}
+            - Advising investors on profitable real estate opportunities.
+          </li>
+          <li>
+            <span className="font-semibold">
+              Land Development & Acquisition
+            </span>{' '}
+            - Helping clients acquire land for residential or commercial
+            projects.
+          </li>
+          <li>
+            <span className="font-semibold">
+              Real Estate Appraisal & Valuation
+            </span>{' '}
+            - Providing professional property valuation for selling, buying, or
+            financing.
+          </li>
+          <li>
+            <span className="font-semibold">
+              Legal & Documentation Assistance
+            </span>{' '}
+            - Handling contracts, property titles, and legal paperwork.
+          </li>
+          <li>
+            <span className="font-semibold">Relocation Services</span> -
+            Assisting individuals and businesses with smooth relocations.
+          </li>
+          <li>
+            <span className="font-semibold">Marketing & Listing Services</span>{' '}
+            - Showcasing properties through professional listings, virtual
+            tours, and digital marketing.
+          </li>
+          <li>
+            <span className="font-semibold">
+              Home Staging & Interior Consultation
+            </span>{' '}
+            - Enhancing property appeal for faster sales and higher value.
+          </li>
+        </ul>
+      </div>
+
+      {/* FEEBACK AND RATINGS */}
+      <div className="grid grid-cols-3 gap-8 px-24">
+        {/* FEEDBACK */}
+        <div className="col-span-2">
+          <div className="mb-8">
+            <p className="text-4xl font-semibold">Feedback</p>
+          </div>
+
+          {/* FEEDBACK CARD */}
+          <FeedbackCard
+            image={Image.Profile}
+            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, facilis."
+          />
+          {/* END OF FEEDBACK CARD */}
+
+          {/* FEEDBACK CARD */}
+          <FeedbackCard
+            image={Image.Profile}
+            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, facilis."
+          />
+          {/* END OF FEEDBACK CARD */}
+
+          <FeedbackCard
+            image={Image.Profile}
+            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, facilis."
+          />
+          {/* END OF FEEDBACK CARD */}
+
+          <FeedbackCard
+            image={Image.Profile}
+            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, facilis."
+          />
+          {/* END OF FEEDBACK CARD */}
+        </div>
+
+        {/* RATINGS */}
+        <div className="col-span-1">
+          <div className="mb-8">
+            <p className="text-4xl font-semibold">Ratings</p>
+          </div>
+
+          <div className="flex items-center mb-8">
+            <p className="text-5xl mr-4">4.8</p>
+            <img src={Image.Star5} alt="" className="h-11 mb-1" />
+            <img src={Image.Star5} alt="" className="h-11 mb-1" />
+            <img src={Image.Star5} alt="" className="h-11 mb-1" />
+            <img src={Image.Star5} alt="" className="h-11 mb-1" />
+            <img src={Image.Star4} alt="" className="h-11 mb-1" />
+          </div>
+
+          <UserRating
+            text="User 1 rated"
+            image1={Image.Star5}
+            image2={Image.Star5}
+            image3={Image.Star5}
+            image4={Image.Star5}
+            image5={Image.Star4}
+          />
+          <UserRating
+            text="User 2 rated"
+            image1={Image.Star5}
+            image2={Image.Star5}
+            image3={Image.Star5}
+            image4={Image.Star0}
+            image5={Image.Star0}
+          />
+          <UserRating
+            text="User 3 rated"
+            image1={Image.Star5}
+            image2={Image.Star5}
+            image3={Image.Star5}
+            image4={Image.Star4}
+            image5={Image.Star0}
+          />
+          <UserRating
+            text="User 4 rated"
+            image1={Image.Star5}
+            image2={Image.Star5}
+            image3={Image.Star5}
+            image4={Image.Star5}
+            image5={Image.Star5}
+          />
+        </div>
       </div>
     </>
   );

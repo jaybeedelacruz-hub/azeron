@@ -7,15 +7,18 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="flex items-center justify-between px-16 py-2 bg-red-900">
+    <div className="flex items-center justify-between px-16 py-4 bg-red-900 border-b-2 border-white ">
       {/* LOGO */}
-      <div className="flex items-center justify-center">
+      <div
+        className="flex items-center justify-center cursor-pointer"
+        onClick={() => navigate('/')}
+      >
         <img src={Image.FinalLogo} alt="" className="w-32" />
       </div>
 
       {/* NAVIGATION LINK */}
       <div>
-        <ul className="flex gap-8 text-white">
+        <ul className="flex gap-12 text-white cursor-pointer">
           <li>Home</li>
           <li>About us</li>
           <li>Review Programs</li>

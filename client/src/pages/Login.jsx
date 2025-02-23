@@ -36,7 +36,7 @@ const Login = () => {
             type="password"
             className="bg-gray-300 px-2 py-1 rounded-2xl text-black mb-3"
           />
-          <a href="" className="text-yellow-300 mb-6">
+          <a href="/forgotpass" className="text-yellow-300 mb-6">
             Forgot Password?
           </a>
           <div className="flex justify-center">
